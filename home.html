@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html> <!-- Being HTML code -->
+
+<head> <!-- Begin head section -->
+
+<link rel="icon" href=".//images/cupcake.png"> <!-- Favorites icon link -->
+
+<link href="cbutte6353Lab5WebCSS.css" rel="stylesheet" media="screen"> <!-- Main link to CSS page -->
+
+<link href="cbutte6353Lab5PrintCSS.css" rel="stylesheet" media="print"> <!-- Main link to Print CSS page -->
+
+<meta charset="utf-8">
+
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script> <!-- Link to access jquery -->
+
+<!-- These links are used to my Fotorama slideshow.  It took a while to find, but I found them through the example fotorama that came with the file I downloaded.
+Without these two crucial pieces, I would not have a slideshow and I would be very sad. -->
+<link href="fotorama.css" rel="stylesheet"> <!-- fotorama CSS -->
+<script src="fotorama.js"></script> <!-- fotorama JavaScript -->
+
+
+<script> // Begin JavaScript code 
+	$(document) .ready(function () { //Begins jquery function
+		$('#more') .click(function () { //Once you click the More button, the hidden text appears
+			$('#details') .slideToggle('fast');	//Makes the text I have hidden appear fast 
+		});
+	});
+	
+</script> <!-- End JavaScript code -->
+
+<!--
+*************************************
+* Programmer: Carly Butterworth
+* Class ID: cbutte6353
+* Lab 5
+* CIS 3900: Internet Programming
+* Summer 2015
+* Due date: 07/01/15
+* Date completed: 07/01/15
+*************************************
+* Program Explanation
+This is the HTML and JavaScript code for my home page.  I go into more detail for each element, but just so you get the gist, I finally found a way to have a 
+slideshow on my homepage.  It took a while, and lots of digging, but I found the links and code I needed to make it work.  I use a bit of JavaScript to hide some
+text and once you click the button more text appears and vice versa.  This was the most challenging and fun lab we have done all semester, in my opinion.  I liked
+being able to choose a layout, and content we wanted to add.  I have learned a lot, in just two short month, about coding that I never thought I could.  I can't wait
+to see what future classes have in store!
+*************************************
+-->
+
+<title>Carly&apos;s Cupcakes</title> <!-- Main title of page -->
+
+</head> <!-- End head section -->
+
+<body> <!-- Begin body section -->
+
+<div id="wrapper"> <!-- This ID makes the web page centered -->
+
+<header><h1><img src=".//images/cupcake.png" alt="Cupcake" width="100" height="100">&nbsp; Carly&apos;s Cupcakes</h1></header> <!-- Header, image and title of the page -->
+
+<nav> <!-- Begin navigation section -->
+	<ul><!-- Begin unordered list -->
+		<li><a href="cbutte6353Lab5.html">Home</a></li> <!-- Link to home page -->
+		<li><a href="#">About Us</a></li>
+		<li><a href="cbutte6353Lab5-Prices.html">Prices</a></li> <!-- Link to Prices page -->
+		<li><a href="cbutte6353Lab5-Form.html">Contact Us</a></li> <!-- Link to the Form page -->
+	</ul>
+</nav><!-- End navigation and unordered list -->
+
+<main> <!-- Begin main section -->
+
+	<h2>Baked Fresh Daily</h2> <!-- Second heading and title before the content begins -->
+
+<!-- I found this fotorama div class link the same place I found my CSS and JS links.-->
+		<div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+
+			<img src=".//images/cookiedough.jpg" alt="Cookie Dough">
+			<img src=".//images/doublechocolate.jpg" alt="Double Chocolate">
+			<img src=".//images/darkchocolate-saltedcaramel.jpg" alt="Salted Caramel">
+			<img src=".//images/vanillabean.jpg" alt="Vanilla Bean">
+			<img src=".//images/redvelvet.jpg" alt="Red Velvet">
+			<img src=".//images/rainbow.jpg" alt="Rainbow">
+			<img src=".//images/pastel.jpg" alt="Pastel">
+			<img src=".//images/random.jpg" alt="Random">
+
+		</div> <!-- End div class fotorama -->
+
+<!-- Paragraph of cupcake ipsum with two breaks at the end -->
+			<p>Cupcake ipsum dolor sit amet I love cake. Candy sugar plum sugar plum. Jelly-o candy canes apple pie liquorice lollipop ice cream I love halvah.
+			Gummi bears I love I love I love chocolate gummi bears. Tootsie roll I love bonbon pie oat cake I love.  Cheesecake biscuit bonbon.  Biscuit powder jelly. 
+			Cheesecake jelly jelly-o cake chocolate cake tiramisu biscuit lemon drops topping. <br><br>
+
+<!-- Link for the More text -->
+			<a href="#" id="more">More</a></p>
+
+<!-- Details ID that does not appear until the word More is clicked on, thanks to JavaScript -->
+			<div id="details"><p> Tart muffin lollipop jelly apple pie chocolate cake gingerbread.  Sugar plum I love dessert cotton candy lemon drops bear claw dragée dragée chocolate. 
+			Cake macaroon I love ice cream bonbon chocolate chocolate bar tart.  Sugar plum gummi bears oat cake tiramisu lemon drops marshmallow. 
+			Sweet roll gummies gingerbread pie danish I love dessert candy canes sesame snaps. Sweet roll sweet bonbon soufflé cake topping.  
+			Oat cake chocolate apple pie brownie toffee. Jelly beans pastry fruitcake cheesecake I love pie topping. Cupcake bonbon marzipan cookie icing cake I love danish croissant. 
+			I love pudding cheesecake powder muffin lollipop.</p></div> <!-- End paragraph and div element -->
+
+</main> <!-- End main element -->
+
+
+<!-- Follows the guidelines I placed on my CSS page to make the footer appera how I wanted it to, which is centered, white and smaller than the other
+content. There is also a code that proves my CSS validated. -->
+<footer>Copyright &copy; Carly Butterworth. 2015. All Rights Reserved.<br>
+			Email: <a href="mailto:carly.m.butterworth@wmich.edu">carly.m.butterworth@wmich.edu</a>
+			Phone: 248-555-5555<br>
+			
+			<p>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+   					<img style="border:0;width:88px;height:31px"
+       			 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+       			 alt="Valid CSS!" />
+    			</a>
+			</p>	
+</footer><!-- End footer element -->
+
+</div> <!-- End div ID wrapper -->
+
+</body> <!-- End body element -->
+
+</html> <!-- End HTML code -->
